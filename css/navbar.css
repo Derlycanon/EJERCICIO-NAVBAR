@@ -1,0 +1,48 @@
+
+
+body{
+    margin: 7%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    background: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(7,10fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header header header"
+    "footer footer footer footer footer footer footer";
+    width: 100%;
+    grid-column-gap: 1px;
+}
+
+.container p{
+    color: blue;
+    text-align: center;
+    padding: 14px 16 px;
+    text-decoration:solid;
+}
+
+.container p:hover{
+    background-color: blueviolet;
+    color: black;
+}
+
+.img1, .img2, .img3, .img4,.img5, .img6, .img7{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 8%;
+}
+
+.footer{
+    height: 20vh;
+    grid-area: footer;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
